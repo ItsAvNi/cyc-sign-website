@@ -183,7 +183,7 @@
             const cycSign = new Image();
             cycSign.src = CYC_SIGN_URL; // Use base64 URL
             cycSign.onload = () => {
-                const signHeight = scaledHeight; // 30% of the scaled image height
+                const signHeight = scaledHeight * 0.9; // 30% of the scaled image height
                 const signWidth = cycSign.width * (signHeight / cycSign.height);
 
                 const signX = offsetX + scaledWidth - signWidth; // Position at the right edge
